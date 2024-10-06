@@ -17,12 +17,12 @@ class Nivel1 extends Phaser.Scene {
 		// Cargar elementos 2D
 		this.load.image('logojuego', 'assets/LOGOjuego.png');
 		this.load.image('plataforma', 'assets/Nivel1/plataforma.webp');
-		this.load.spritesheet('player', 'assets/Nivel1/personaje1.webp', { frameWidth: 57, frameHeight: 62 });
+		this.load.spritesheet('player', 'assets/Nivel1/personaje1.png', { frameWidth: 57, frameHeight: 62 });
 		this.load.image("news", "assets/Nivel1/news.png");
 		
 		// Cargar modelos 3D
 		this.load.obj('ambientecompleto', 'assets/Nivel1/3d/ambiente/ambientecompleto.obj');
-		this.load.obj('hand', 'assets/Nivel1/3d/mano/hand4.obj');
+		this.load.obj('hand', 'assets/Nivel1/3d/mano/Hand4.obj');
 		this.load.obj('silla', 'assets/Nivel1/3d/silla/silla.obj');
 		this.load.obj('peligro', 'assets/Nivel1/3d/peligro/peligro.obj');
 		this.load.obj('basurero', 'assets/Nivel1/3d/basurero/basurero.obj');
@@ -167,11 +167,11 @@ class Nivel1 extends Phaser.Scene {
 
 //***************** Cargar mano con celular *****************************/
 const mtlLoader = new THREE.MTLLoader();
-mtlLoader.load('assets/Nivel1/3d/mano/hand4.mtl', (materials) => {
+mtlLoader.load('assets/Nivel1/3d/mano/Hand4.mtl', (materials) => {
 	materials.preload();
 	const objLoader = new THREE.OBJLoader();
 	objLoader.setMaterials(materials);
-	objLoader.load('assets/Nivel1/3d/mano/hand4.obj', (object) => {
+	objLoader.load('assets/Nivel1/3d/mano/Hand4.obj', (object) => {
 		this.mano = object;
 		this.scene3D.add(this.mano);
 		this.mano.scale.set(0.0035, 0.0035, 0.0035);
