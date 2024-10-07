@@ -1003,7 +1003,7 @@ contadnoticias() {
 					this.ambiente.position.z = 0.2; // Ajusta la distancia según tu necesidad
 				}
 			}
-			const speedfondo = 0.007; 
+			const speedfondo = 0.02; 
 /***************************movimiento fondo *************************/			
 
 			if (this.fondo2_1 && this.fondo2_2) {
@@ -1065,7 +1065,7 @@ if (this.obstaculo_1 && this.obstaculo_2) {
 // Controlar el sprite con las teclas de flecha para saltar
 
 if(this.jugador){
-	if (this.spaceKey.isDown && !this.jugador.isJumping ) {
+	if (this.cursors.up.isDown && !this.jugador.isJumping ) {
 		console.log("arriba");
 		this.jugador.velocityZ = -this.jugador.jumpVelocity;
 		this.jugador.isJumping = true;
