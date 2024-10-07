@@ -942,7 +942,7 @@ contadnoticias() {
 
 		if (this.ambiente) {
 			// Mover el modelo hacia la cámara
-			const speedambiente = 0.008 * delta; // ajusta la velocidad basada en delta
+			const speedambiente = 0.005 * delta; // ajusta la velocidad basada en delta
 			this.ambiente.position.z += speedambiente;
 			
 
@@ -1003,7 +1003,7 @@ contadnoticias() {
 					this.ambiente.position.z = 0.2; // Ajusta la distancia según tu necesidad
 				}
 			}
-			const speedfondo = 0.07; 
+			const speedfondo = 0.007; 
 /***************************movimiento fondo *************************/			
 
 			if (this.fondo2_1 && this.fondo2_2) {
