@@ -419,7 +419,7 @@ btnhome.on('pointerdown', () => {
         fake_new_class: fakeNewClass
     };
 
-    fetch('http://localhost:5000/insert_news', {
+    fetch('https://backendreality.onrender.com/insert_news', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
