@@ -587,7 +587,7 @@ if(this.noticiaAleatoria.fake_new_class=='VERDADERA'){
 	}
 
 	cargarNoticiasDesdeBackend() {
-		return fetch('http://localhost:5000/load_news') // Reemplaza por la URL de tu backend
+		return fetch('https://backendreality.onrender.com/load_news') // Reemplaza por la URL de tu backend
 			.then(response => {
 				if (!response.ok) {
 					throw new Error('Error en la carga de noticias');
