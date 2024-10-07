@@ -325,7 +325,7 @@ btnhome.on('pointerdown', () => {
 
     submitNews(news) {
         if (news.length > 0) {
-            return fetch('http://localhost:5000/predict', {  // Cambia la URL si es necesario
+            return fetch('https://backendreality.onrender.com/predict', {  // Cambia la URL si es necesario
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
