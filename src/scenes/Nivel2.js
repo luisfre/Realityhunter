@@ -98,7 +98,9 @@ moveInSceneActionScriptDurationConfigCompLOGO.duration = 1000; // Duración de 1
 		const clickSound = this.sound.add('clickSound');
 		this.respuesta="";
 		const urlParams = new URLSearchParams(window.location.search); 
-	    this.game.global.conteoglobal=urlParams.get('conteoglobal');
+	    //this.game.global.conteoglobal=urlParams.get('conteoglobal');
+		this.game.global.conteoglobal=5
+		
 	
 	
 		console.log(this.game.global.conteoglobal);
