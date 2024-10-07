@@ -120,11 +120,11 @@ this.tweens.add({
 
 // Detectar clic o tecla para avanzar
 this.input.once('pointerdown', () => {
-this.scene.start('Nivel1');
+this.scene.start('Nivel2');
 });
 
 this.input.keyboard.once('keydown', () => {
-this.scene.start('Nivel1');
+this.scene.start('Nivel2');
 });
 
 
