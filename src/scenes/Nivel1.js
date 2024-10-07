@@ -781,7 +781,7 @@ actualizarobstaculo(){
 	
 	if(this.obstaculo==1){
 		if(this.silla){
-			this.silla.position.z += 0.2;
+			this.silla.position.z += 0.1;
 			this.sillaBoundingBox = new THREE.Box3().setFromObject(this.silla);
 				
 				// Scale the bounding box along a specific axis
@@ -828,7 +828,7 @@ actualizarobstaculo(){
 
 	}else if(this.obstaculo==2){
 		if(this.peligro){
-			this.peligro.position.z += 0.2;
+			this.peligro.position.z += 0.1;
 			// Create bounding box for peligro
 			this.peligroBoundingBox = new THREE.Box3().setFromObject(this.peligro);
 				
@@ -869,7 +869,7 @@ actualizarobstaculo(){
 
 	}else if(this.obstaculo==3){
 		if(this.basurero && this.boundie){
-			this.basurero.position.z += 0.2;
+			this.basurero.position.z += 0.1;
 			// Create bounding box for peligro
 			this.basureroBoundingBox = new THREE.Box3().setFromObject(this.basurero);
 				
@@ -994,7 +994,7 @@ contadnoticias() {
 
 			if (this.ambiente) {
 				// Mover el modelo hacia la cámara
-				const speedambiente = 0.008 * delta; // ajusta la velocidad basada en delta
+				const speedambiente = 0.006 * delta; // ajusta la velocidad basada en delta
 				this.ambiente.position.z += speedambiente;
 				
 	
@@ -1003,7 +1003,7 @@ contadnoticias() {
 					this.ambiente.position.z = 0.2; // Ajusta la distancia según tu necesidad
 				}
 			}
-			const speedfondo = 0.02; 
+			const speedfondo = 0.05; 
 /***************************movimiento fondo *************************/			
 
 			if (this.fondo2_1 && this.fondo2_2) {
